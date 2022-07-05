@@ -1,0 +1,59 @@
+@use './mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+:root {
+  //fonts
+  --open-sans: 'Open Sans', sans-serif;
+  --raleway: 'Raleway', sans-serif;
+
+  //colors
+  --dark-blue: hsl(217, 28%, 15%); 
+  --dark-blue-main-background: hsl(218, 28%, 13%);
+  --dark-blue-footer-background: hsl(216, 53%, 9%);
+  --dark-blue-testimonials-background: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red-error: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+body{
+  background-color: var(--dark-blue);
+}
