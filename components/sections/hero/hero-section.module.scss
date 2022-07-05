@@ -9,8 +9,61 @@
   align-items: center;
   position: relative;
 
-  @include media(laptop){
+  $curvy-bottom: 222px;
+  $curvy-bottom-tablet: 100px;
+  $curvy-bottom-laptop: 158px;
+
+  @include media(laptop) {
     padding-top: 75px;
+    padding-bottom: $curvy-bottom-laptop;
+  }
+
+  >* {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    background-image: url(/images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 37.6%;
+    bottom: $curvy-bottom;
+
+    @include media(tablet) {
+      bottom: $curvy-bottom-tablet;
+    }
+
+    @include media(laptop) {
+      background-image: url(/images/bg-curvy-desktop.svg);
+      bottom: 0;
+      padding-bottom: 31.1805556%;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    width: 100%;
+    height: $curvy-bottom;
+    background-color: var(--dark-blue-main-background);
+
+    @include media(tablet) {
+      height: $curvy-bottom-tablet;
+    }
+
+    @include media(laptop) {
+      display: none;
+    }
   }
 }
 
@@ -28,11 +81,11 @@
   text-align: center;
   color: var(--white);
 
-  @include media(tablet){
+  @include media(tablet) {
     font-size: rem(32);
   }
 
-  @include media(laptop){
+  @include media(laptop) {
     margin-top: 36px;
     font-size: rem(40);
   }
@@ -48,13 +101,13 @@
   text-align: center;
   color: var(--white);
 
-  @include media(tablet){
+  @include media(tablet) {
     font-size: rem(16);
   }
 
-  @include media(laptop){
+  @include media(laptop) {
     margin-top: 32px;
-    font-size: rem(20);    
+    font-size: rem(20);
   }
 }
 
@@ -76,7 +129,7 @@
     background: #8ADAE3;
   }
 
-  @include media(laptop){
+  @include media(laptop) {
     padding: 18.5px 95.5px;
     font-size: rem(16);
     line-height: 118.75%;
