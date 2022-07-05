@@ -1,0 +1,49 @@
+@use '~/styles/mixins' as *;
+@use 'sass:math';
+
+
+.navbar {
+  margin: 24px 6.4% 0 5.33333%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media(laptop){
+    margin: 73px max(50% - 640px, 5.5555556%) 0;
+  }
+}
+
+.logo {
+  width: 80px;
+  display: grid;
+
+  @include media(tablet) {
+    width: 120px;
+  }
+
+  @include media(laptop){
+    width: 178px;
+  }
+}
+
+.navlink-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navlink {
+  font-family: var(--raleway);
+  font-weight: 400;
+  font-size: rem(12);
+  line-height: math.div(14, 12);
+  color: var(--white);
+
+  @include media(tablet) {
+    font-size: rem(14);
+  }
+
+  @include media(laptop){
+    font-size: rem(16);
+  }
+}
