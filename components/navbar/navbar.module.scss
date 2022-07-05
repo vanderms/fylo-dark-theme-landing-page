@@ -3,13 +3,14 @@
 
 
 .navbar {
-  margin: 24px 6.4% 0 5.33333%;
+  padding: 24px 6.4% 0 5.33333%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--dark-blue);
 
-  @include media(laptop){
-    margin: 73px max(50% - 640px, 5.5555556%) 0;
+  @include media(laptop) {
+    padding: 73px max(50% - 640px, 5.5555556%) 0;
   }
 }
 
@@ -21,7 +22,7 @@
     width: 120px;
   }
 
-  @include media(laptop){
+  @include media(laptop) {
     width: 178px;
   }
 }
@@ -30,6 +31,10 @@
   display: flex;
   align-items: center;
   gap: 24px;
+
+  @include media(laptop) {
+    gap: 57px;
+  }
 }
 
 .navlink {
@@ -43,7 +48,12 @@
     font-size: rem(14);
   }
 
-  @include media(laptop){
+  @include media(laptop) {
     font-size: rem(16);
+  }
+
+  &:hover {
+    font-weight: 700;
+    text-decoration: underline;
   }
 }
