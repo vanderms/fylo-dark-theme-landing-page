@@ -1,0 +1,50 @@
+@use '~/styles/mixins' as *;
+
+.testimonials-section {
+  padding-top: 169px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+
+  @include media(laptop) {
+    padding-top: 179px;
+    width: 1160px;
+    margin-inline: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  figure {
+    position: relative;
+    z-index: 1;
+  }
+
+  li {
+    display: contents;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 26px;
+    top: 148px;
+    z-index: 0;
+    background-image: url(/images/bg-quotes.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: calc(50% - (min(74.6666667%, 360px)/ 2) + 8px);
+
+    @include media(laptop) {
+      width: 55px;
+      height: 45px;
+      left: -6px;
+      top: 146px;
+    }
+  }
+}

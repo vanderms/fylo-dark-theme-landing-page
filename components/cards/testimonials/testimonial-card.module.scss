@@ -1,0 +1,70 @@
+@use '~/styles/mixins' as *;
+
+.testimonial-card {
+  width: min(74.6666667%, 360px);
+  padding: 24px 20px 22px;
+  background-color: var(--dark-blue-testimonials-background);
+  box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+  border-radius: 4px;
+
+  @include media(tablet){
+    padding: 40px 26px 26px;
+  }
+}
+
+.testimonial {
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: rem(10);
+  line-height: 180%;
+  color: var(--white);
+
+  @include media(tablet){
+    font-size: rem(14);
+    line-height: 150%;
+    letter-spacing: 0.5px;
+  }
+}
+
+.figcaption {
+  margin-top: 19px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  @include media(tablet){
+    margin-top: 24px;
+  }
+}
+
+.image-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  width: 24px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  height: 26px;
+  justify-content: space-between;
+}
+
+.name {
+  font-family: var(--open-sans);
+  font-weight: 700;
+  font-size: rem(10);
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  color: var(--white);
+}
+
+.role {
+  font-family: var(--open-sans);  
+  font-weight: 400;
+  font-size: rem(8);
+  line-height: 125%;
+  letter-spacing: 0.571429px;
+  color: var(--white);
+}

@@ -2,6 +2,7 @@ import { Navbar } from 'components/navbar/navbar'
 import { FeaturesSection } from 'components/sections/features/features-section'
 import { HeroSection } from 'components/sections/hero/hero-section'
 import { ProductiveSection } from 'components/sections/productive/productive-section'
+import { TestimonialsSection } from 'components/sections/testimonials/testimonials-section'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
@@ -18,7 +19,8 @@ const Home: NextPage = () => {
       <main>
         <HeroSection />
         <FeaturesSection />
-        <ProductiveSection/>        
+        <ProductiveSection/>  
+        <TestimonialsSection/>      
       </main>
      
     </>
