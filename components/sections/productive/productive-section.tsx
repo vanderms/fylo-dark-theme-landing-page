@@ -7,7 +7,7 @@ export function ProductiveSection() {
   return (
     <section className={selectors["productive-section"]} aria-labelledby='productive-section-title'>
       <div className={selectors["image-wrapper"]}>
-        <Image src={illustration} alt=''/>
+        <Image src={illustration} alt='' priority={true} />
       </div>
       <div className={selectors["content"]}>
         <h2 className={selectors["title"]} id='productive-section-title'>Stay productive, wherever you are</h2>

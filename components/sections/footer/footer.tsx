@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className={selectors["footer"]}>
       <div className={selectors["image-wrapper"]}>
-        <Image src={Logo} alt='' />      
+        <Image src={Logo} alt='' priority={ true } />      
       </div>
       <div className={selectors["second-row"]}>
         <address className={selectors["contact-info"]}>

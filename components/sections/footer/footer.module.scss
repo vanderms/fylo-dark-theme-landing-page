@@ -24,6 +24,10 @@
 .image-wrapper {
   width: 108px;
   display: grid;
+
+  @include media(laptop){
+    width: 176px;
+  }
 }
 
 .second-row {

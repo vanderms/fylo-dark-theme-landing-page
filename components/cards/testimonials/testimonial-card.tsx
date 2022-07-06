@@ -17,7 +17,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = (props) => {
       </blockquote>
       <figcaption className={selectors['figcaption']}>
         <span className={selectors["image-wrapper"]}>
-          <Image src={props.avatar} width={24} height={24} alt=''/>
+          <Image src={props.avatar} width={24} height={24} alt='' priority={true} />
         </span>
         <span className={selectors["text-container"]}>
           <span className={selectors["name"]}>{ props.name }</span>
