@@ -1,4 +1,5 @@
 import { Navbar } from 'components/navbar/navbar'
+import { CallToActionSection } from 'components/sections/call-to-action/call-to-action-section'
 import { FeaturesSection } from 'components/sections/features/features-section'
 import { HeroSection } from 'components/sections/hero/hero-section'
 import { ProductiveSection } from 'components/sections/productive/productive-section'
@@ -20,7 +21,8 @@ const Home: NextPage = () => {
         <HeroSection />
         <FeaturesSection />
         <ProductiveSection/>  
-        <TestimonialsSection/>      
+        <TestimonialsSection />
+        <CallToActionSection/>
       </main>
      
     </>

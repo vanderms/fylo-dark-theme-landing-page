@@ -1,0 +1,72 @@
+@use '~/styles/mixins' as *;
+
+
+.get-started-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+
+  @include media(tablet){
+    grid-template-columns: 480fr 200fr;
+    gap: 29px;
+  }
+}
+
+.email {
+  width: 100%;
+  height: 48px;
+  padding-inline: 28px;
+  border-radius: 999px;
+  border: none;
+
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: rem(14);
+  color: var(--dark-blue);
+
+  &::placeholder {
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: rem(14);
+    color: #383838;
+  }
+}
+
+.label-text {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.error-message {
+  display: block;
+  margin-top: 5px;
+  font-family: var(--open-sans);
+  font-weight: 700;
+  font-size: rem(10);
+  line-height: 140%;
+  color: #FF4242;
+  margin-left: 28px;
+}
+
+.submit {
+  background: linear-gradient(132.02deg, #63E1D9 -31.85%, #34A0CD 100%);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 999px;
+  min-width: 200px;
+  height: 48px;
+
+
+  font-family: var(--raleway);  
+  font-weight: 700;
+  font-size: rem(14);
+  color: var(--white);
+  
+  &:hover {
+    background: #8ADAE3;
+  }
+}

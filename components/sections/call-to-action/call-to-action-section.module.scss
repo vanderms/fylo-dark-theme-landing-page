@@ -1,0 +1,58 @@
+@use '~/styles/mixins' as *;
+
+.call-to-action-section {
+  position: relative;
+  z-index: 1;
+  margin-top: 160px;
+  width: min(89.6%, 863px);
+  margin-inline: auto;
+  background: var(--dark-blue);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+  border-radius: 9px;
+  padding: 40px 28px 37px;
+
+  @include media(tablet) {
+    margin-top: 201px;
+    padding: 42px 77px 22px;
+  }
+}
+
+.title {
+  font-family: var(--raleway);
+  font-weight: 700;
+  font-size: rem(18);
+  line-height: 133%;
+  color: var(--white);
+  text-align: center;
+  max-width: 673px;
+
+  @include media(tablet) {
+    font-size: rem(32);
+    line-height: 150%;
+    width: 77.0904926%;
+    margin-inline: auto;
+  }
+}
+
+.subtitle {
+  margin-top: 16px;
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: 150%;
+  text-align: center;
+  color: var(--white);
+
+  @include media(tablet) {
+    width: 77.0904926%;
+    margin-inline: auto;
+  }
+}
+
+.call-to-action-section [data-component='form_get-started'] {
+  margin-top: 32px;
+
+  @include media(tablet) {
+    margin-top: 38px;
+  }
+}
