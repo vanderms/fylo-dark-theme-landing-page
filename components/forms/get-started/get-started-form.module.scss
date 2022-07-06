@@ -34,12 +34,7 @@
 }
 
 .label-text {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+ @include screenreader-only;
 }
 
 .error-message {
@@ -51,6 +46,7 @@
   line-height: 140%;
   color: #FF4242;
   margin-left: 28px;
+  height: 14px;
 }
 
 .submit {

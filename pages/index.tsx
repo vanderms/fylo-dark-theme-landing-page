@@ -1,6 +1,7 @@
 import { Navbar } from 'components/navbar/navbar'
 import { CallToActionSection } from 'components/sections/call-to-action/call-to-action-section'
 import { FeaturesSection } from 'components/sections/features/features-section'
+import { Footer } from 'components/sections/footer/footer'
 import { HeroSection } from 'components/sections/hero/hero-section'
 import { ProductiveSection } from 'components/sections/productive/productive-section'
 import { TestimonialsSection } from 'components/sections/testimonials/testimonials-section'
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
         <TestimonialsSection />
         <CallToActionSection/>
       </main>
+      <Footer/>
      
     </>
   )
